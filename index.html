@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstName = "Ayxan";
+      let lastName = "Mirzayev";
+      console.log(
+        `Sizin adınız ${firstName} ${lastName}. Tanışlığımıza çox şadam!`
+      );
+
+      let fullName = "Ayxan Mirzayev";
+
+      console.log(
+        "Length of full name without spaces: " +
+          fullName.replaceAll(" ", "").length
+      );
+
+      let fullNameList = fullName.split(" ");
+
+      console.log(fullNameList[1][0] + fullNameList[0][0]);
+
+      let firstNamePrompt = prompt("Type your fullname:");
+      fullNameList = firstNamePrompt.split(" ");
+
+      console.log(fullNameList[1] + " " + fullNameList[0]);
+    </script>
+  </body>
+</html>
